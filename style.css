@@ -315,3 +315,52 @@ nav a {
 nav a:hover {
   color: #e2e8f0;
 }
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  nav {
+    gap: 16px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+    padding: 0;
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .video-container.vertical {
+    max-width: 100%;
+  }
+}
