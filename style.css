@@ -372,4 +372,41 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.about {
+  padding: 80px 0;
+  border-bottom: 1px solid #1c1c30;
+}
+
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #1d4ed8;
+  box-shadow: 0 0 24px rgba(29, 78, 216, 0.4);
+}
+
+.about-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #eef2ff;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #8b96a9;
+  line-height: 1.7;
 }
