@@ -149,10 +149,10 @@ header .container {
   gap: 16px;
 }
 
-.works-grid .work-card:last-child:nth-child(odd) {
+.work-card-solo {
   grid-column: 1 / -1;
-  justify-self: center;
-  width: calc(50% - 8px);
+  max-width: calc(50% - 8px);
+  margin: 0 auto;
 }
 
 .work-card {
