@@ -382,6 +382,9 @@ nav a:hover {
     flex-direction: column;
     text-align: center;
   }
+  .work-card-solo {
+    max-width: 100%;
+  }
 }
 .about {
   padding: 80px 0;
