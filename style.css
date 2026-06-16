@@ -151,8 +151,8 @@ header .container {
 
 .works-grid .work-card:last-child:nth-child(odd) {
   grid-column: 1 / -1;
-  max-width: 50%;
-  margin: 0 auto;
+  justify-self: center;
+  width: calc(50% - 8px);
 }
 
 .work-card {
