@@ -49,8 +49,12 @@
         <p class="case-client">Частная школа с большим штатом и десятками внутренних документов — регламенты, инструкции, правила.</p>
       </div>
 
-      <div class="case-video-placeholder">
-        <span>Здесь будет видео-демо</span>
+      <div class="video-switcher">
+        <button class="video-btn active" onclick="switchVideo(this, 'https://www.youtube.com/embed/HiRSLy8u_js', 'case')">YouTube</button>
+        <button class="video-btn" onclick="switchVideo(this, 'https://rutube.ru/play/embed/9ca8800d7682f065e6af4810519b1597/', 'case')">RuTube</button>
+      </div>
+      <div class="video-container vertical">
+        <iframe id="case-player" src="https://www.youtube.com/embed/HiRSLy8u_js" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="case-blocks">
