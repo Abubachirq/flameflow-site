@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flameflow — автоматизация через Telegram-боты</title>
+    <title>Flameflow. Автоматизация через Telegram-боты</title>
     <link rel="stylesheet" href="style.css?v=2" />
   </head>
   <body>
@@ -12,8 +12,7 @@
   <div class="container">
     <span class="logo">Flameflow</span>
     <nav>
-      <a href="#services">Услуги</a>
-      <a href="#works">Примеры работ</a>
+      <a href="#services">Что я делаю</a>
       <a href="#contact">Контакт</a>
     </nav>
   </div>
@@ -38,121 +37,121 @@
     </div>
   </div>
 </section>
-<section class="case-study" id="case-study">
+<section class="what-i-do" id="services">
   <div class="container">
-    <p class="section-label">Кейсы</p>
-    <h2>Реальные результаты</h2>
-    <div class="case-card">
+    <p class="section-label">Что я делаю</p>
+    <h2>Автоматизирую то, что сотрудники сейчас делают вручную</h2>
 
-      <div class="case-header">
-        <h3>Бот-база знаний для частной школы: ответы по регламентам за секунды</h3>
-        <p class="case-client">Частная школа с большим штатом и десятками внутренних документов — регламенты, инструкции, правила.</p>
+    <div class="service">
+      <div class="service-header">
+        <h3>Ответы по документам</h3>
+        <p>Сотрудник задаёт вопрос по регламенту, договору или инструкции. Бот находит ответ во внутренних документах компании и присылает его за секунды вместе со ссылкой на источник.</p>
       </div>
 
-      <div class="video-switcher">
-        <button class="video-btn active" onclick="switchVideo(this, 'https://www.youtube.com/embed/HiRSLy8u_js', 'case')">YouTube</button>
-        <button class="video-btn" onclick="switchVideo(this, 'https://rutube.ru/play/embed/9ca8800d7682f065e6af4810519b1597/', 'case')">RuTube</button>
-      </div>
-      <div class="video-container vertical">
-        <iframe id="case-player" src="https://www.youtube.com/embed/HiRSLy8u_js" frameborder="0" allowfullscreen></iframe>
-      </div>
+      <div class="lane">
+        <button type="button" class="lane-arrow lane-arrow-prev" aria-label="Предыдущая карточка">‹</button>
+        <div class="lane-track">
 
-      <div class="case-blocks">
-        <div class="case-block">
-          <p class="case-block-label">Проблема</p>
-          <p>Когда у сотрудника возникал вопрос по внутренним правилам, найти ответ было небыстро: нужный документ ещё поискать среди сотни файлов, а чаще проще отвлечь администрацию. Сотрудники теряли время, а руководство отвечало на одни и те же вопросы.</p>
+          <article class="proof-card proof-card-case">
+            <span class="proof-badge proof-badge-case">Реальный кейс</span>
+            <div class="proof-card-media">
+              <div class="video-switcher">
+                <button type="button" class="video-btn active" data-video="https://www.youtube.com/embed/HiRSLy8u_js">YouTube</button>
+                <button type="button" class="video-btn" data-video="https://rutube.ru/play/embed/9ca8800d7682f065e6af4810519b1597/">RuTube</button>
+              </div>
+              <div class="video-container vertical">
+                <iframe src="https://www.youtube.com/embed/HiRSLy8u_js" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="proof-card-body">
+              <h4>Бот-база знаний для частной школы</h4>
+              <p>Ответы по регламентам и инструкциям за секунды вместо поисков по документам вручную.</p>
+              <button type="button" class="card-toggle">Читать подробнее</button>
+              <div class="proof-card-full" hidden>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <p class="case-block-label">Проблема</p>
+                    <p>Когда у сотрудника возникал вопрос по внутренним правилам, найти ответ было небыстро: нужный документ ещё поискать среди сотни файлов, а чаще проще отвлечь администрацию. Сотрудники теряли время, а руководство отвечало на одни и те же вопросы.</p>
+                  </div>
+                  <div class="case-block">
+                    <p class="case-block-label">Решение</p>
+                    <p>Telegram-бот знает все внутренние документы школы. Сотрудник задаёт вопрос обычными словами, и бот за пару секунд находит ответ и показывает, из какого документа он взят. Если ответа в документах нет, бот сообщает об этом прямо и ничего не придумывает. Это важно, когда речь о правилах.</p>
+                  </div>
+                  <div class="case-block">
+                    <p class="case-block-label">Результат</p>
+                    <p class="case-placeholder">[Заполнить после теста: конкретика и цитата заказчика]</p>
+                  </div>
+                </div>
+                <div class="case-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Telegram</span>
+                  <span class="tag">ИИ Claude</span>
+                  <span class="tag">Поиск по документам</span>
+                </div>
+                <p class="case-note">База пополняется без переделки бота.</p>
+              </div>
+            </div>
+          </article>
+
         </div>
-        <div class="case-block">
-          <p class="case-block-label">Решение</p>
-          <p>Telegram-бот, который знает все внутренние документы школы. Сотрудник задаёт вопрос обычными словами — бот за пару секунд находит ответ и показывает, из какого документа он взят. Если ответа в документах нет, бот прямо об этом говорит и ничего не выдумывает — критично, когда речь о правилах.</p>
-        </div>
-        <div class="case-block">
-          <p class="case-block-label">Результат</p>
-          <p class="case-placeholder">[Заполнить после теста — конкретика + цитата заказчика]</p>
-        </div>
-      </div>
-
-      <div class="case-quote-placeholder">
-        <span>Место под скриншот или цитату отзыва</span>
-      </div>
-
-      <div class="case-tags">
-        <span class="tag">Python</span>
-        <span class="tag">Telegram</span>
-        <span class="tag">ИИ Claude</span>
-        <span class="tag">Поиск по документам</span>
-      </div>
-      <p class="case-note">База пополняется без переделки бота.</p>
-
-    </div>
-  </div>
-</section>
-<section class="services" id="services">
-  <div class="container">
-    <p class="section-label">Услуги</p>
-    <h2>Где бизнес теряет деньги — и как это исправить</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">📅</div>
-        <h3>Боты записи</h3>
-        <p>Клиент хочет записаться — но не дозвонился, не дождался ответа и ушёл к конкуренту. Бот принимает заявки в любое время и не теряет ни одного обращения.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔁</div>
-        <h3>Боты-воронки</h3>
-        <p>Большинство людей не покупают с первого касания. Бот-воронка прогревает, отвечает на вопросы и доводит клиента до покупки — автоматически, без вашего участия.</p>
-      </div>
-      <div class="card card-accent">
-        <div class="card-icon">🤖</div>
-        <h3>ИИ-интеграции</h3>
-        <p>ИИ-ассистент внутри бота отвечает на вопросы клиентов вместо вас — круглосуточно, без задержек. Вы не тратите время на одни и те же вопросы, клиент получает ответ мгновенно.</p>
+        <button type="button" class="lane-arrow lane-arrow-next" aria-label="Следующая карточка">›</button>
       </div>
     </div>
-  </div>
-</section>
-<section class="works" id="works">
-  <div class="container">
-    <p class="section-label">Примеры работ</p>
-    <h2>Демо-работы</h2>
-    <div class="works-grid">
 
-      <div class="work-card">
-        <h3>Бот записи</h3>
-        <p>Онлайн-запись для мастера маникюра — выбор услуги, времени, напоминания клиенту</p>
-        <div class="video-switcher">
-          <button class="video-btn active" onclick="switchVideo(this, 'https://www.youtube.com/embed/GllEG6F2inY', 'booking')">YouTube</button>
-          <button class="video-btn" onclick="switchVideo(this, 'https://rutube.ru/play/embed/6b5cfb9696b31258e10bdad509181506/?p=c9lvjos490pVQSDzJiD7QA', 'booking')">RuTube</button>
-        </div>
-        <div class="video-container horizontal">
-          <iframe id="booking-player" src="https://www.youtube.com/embed/GllEG6F2inY" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="service">
+      <div class="service-header">
+        <h3>Контроль задач</h3>
+        <p>Бот ставит задачи сотрудникам, напоминает о сроках и показывает руководителю, что просрочено. Задачи не теряются в переписке и не требуют ручного контроля.</p>
       </div>
 
-      <div class="work-card">
-        <h3>Бот-воронка с ИИ-ассистентом</h3>
-        <p>Бот прогревает клиента, отвечает на его вопросы через ИИ и доводит до записи — без участия владельца</p>
-        <div class="video-switcher">
-          <button class="video-btn active" onclick="switchVideo(this, 'https://www.youtube.com/embed/Eo-kOB-XGds', 'funnel')">YouTube</button>
-          <button class="video-btn" onclick="switchVideo(this, 'https://rutube.ru/play/embed/2f76867be618d5ae1fa9c9cf2dbe93e2/?p=NN1DjvzFcpMu16nAimWWvQ', 'funnel')">RuTube</button>
-        </div>
-        <div class="video-container vertical">
-          <iframe id="funnel-player" src="https://www.youtube.com/embed/Eo-kOB-XGds" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
+      <div class="lane">
+        <button type="button" class="lane-arrow lane-arrow-prev" aria-label="Предыдущая карточка">‹</button>
+        <div class="lane-track">
 
-      <div class="work-card work-card-solo">
-        <h3>Сортировщик обращений</h3>
-        <p>Клиенты пишут что угодно — бот автоматически разбирает обращения по категориям (спам, сотрудничество, жалоба) и срочности, и показывает администратору сводку за день</p>
-        <div class="video-switcher">
-          <button class="video-btn active" onclick="switchVideo(this, 'https://www.youtube.com/embed/uXEarvhDgSQ', 'sorter')">YouTube</button>
-          <button class="video-btn" onclick="switchVideo(this, 'https://rutube.ru/play/embed/dd0c55a4cdcf100359e6cf731f219f04/?p=DvaEsMPblYtW5g4TG4eBQg', 'sorter')">RuTube</button>
-        </div>
-        <div class="video-container vertical">
-          <iframe id="sorter-player" src="https://www.youtube.com/embed/uXEarvhDgSQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
+          <article class="proof-card proof-card-placeholder">
+            <div class="proof-card-body">
+              <h4>Кейс готовится</h4>
+              <p>Проект в работе. Скоро здесь появится реальный кейс с результатами.</p>
+            </div>
+          </article>
 
+        </div>
+        <button type="button" class="lane-arrow lane-arrow-next" aria-label="Следующая карточка">›</button>
+      </div>
     </div>
+
+    <div class="service">
+      <div class="service-header">
+        <h3>Разбор обращений</h3>
+        <p>Бот разбирает входящий поток обращений, сортирует по категориям и срочности и сразу показывает администратору сводку. Сотрудник не читает всё подряд вручную и не тратит время на сортировку.</p>
+      </div>
+
+      <div class="lane">
+        <button type="button" class="lane-arrow lane-arrow-prev" aria-label="Предыдущая карточка">‹</button>
+        <div class="lane-track">
+
+          <article class="proof-card">
+            <span class="proof-badge proof-badge-demo">Демо</span>
+            <div class="proof-card-media">
+              <div class="video-switcher">
+                <button type="button" class="video-btn active" data-video="https://www.youtube.com/embed/uXEarvhDgSQ">YouTube</button>
+                <button type="button" class="video-btn" data-video="https://rutube.ru/play/embed/dd0c55a4cdcf100359e6cf731f219f04/?p=DvaEsMPblYtW5g4TG4eBQg">RuTube</button>
+              </div>
+              <div class="video-container vertical">
+                <iframe src="https://www.youtube.com/embed/uXEarvhDgSQ" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="proof-card-body">
+              <h4>Сортировщик обращений</h4>
+              <p>Все входящие сообщения автоматически распределяются по категориям и срочности. Администратор получает готовую сводку вместо разбора каждого сообщения вручную.</p>
+            </div>
+          </article>
+
+        </div>
+        <button type="button" class="lane-arrow lane-arrow-next" aria-label="Следующая карточка">›</button>
+      </div>
+    </div>
+
   </div>
 </section>
 <section class="process">
@@ -175,14 +174,15 @@
       <div class="step">
         <div class="step-number">3</div>
         <h3>Запуск</h3>
-        <p>Сдаю готового бота — он работает и приносит результат</p>
+        <p>Сдаю готового бота, который работает и приносит результат</p>
       </div>
     </div>
   </div>
 </section>
 <section class="contact" id="contact">
+  <div class="container">
     <h2>Есть задача?</h2>
-    <p class="contact-subtitle">Расскажите — разберёмся и найдём решение</p>
+    <p class="contact-subtitle">Расскажите, разберёмся и найдём решение</p>
     <a href="https://t.me/flameflow" class="btn" target="_blank">Написать в Telegram</a>
   </div>
 </section>
@@ -191,14 +191,103 @@
     <p>© 2026 Flameflow. Автоматизация через Telegram-боты.</p>
   </div>
 </footer>
+
+<!--
+  АРХИВ. Карточки услуг и демо-работ, которые не входят в подтверждённые 3 услуги
+  (Ответы по документам, Контроль задач, Разбор обращений).
+  Убраны с сайта 2026-07-03, оставлены в коде на случай возврата этого направления.
+  При возврате разметку нужно адаптировать под структуру .service/.lane/.proof-card:
+  старый switchVideo(...) и id плееров (booking-player, funnel-player) больше не используются.
+
+  Старые карточки услуг:
+  <div class="card">
+    <div class="card-icon">📅</div>
+    <h3>Боты записи</h3>
+    <p>Клиент хочет записаться, но не дозвонился, не дождался ответа и ушёл к конкуренту. Бот принимает заявки в любое время и не теряет ни одного обращения.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🔁</div>
+    <h3>Боты-воронки</h3>
+    <p>Большинство людей не покупают с первого касания. Бот-воронка прогревает, отвечает на вопросы и доводит клиента до покупки автоматически, без вашего участия.</p>
+  </div>
+  <div class="card card-accent">
+    <div class="card-icon">🤖</div>
+    <h3>ИИ-интеграции</h3>
+    <p>ИИ-ассистент внутри бота отвечает на вопросы клиентов вместо вас круглосуточно, без задержек. Вы не тратите время на одни и те же вопросы, клиент получает ответ мгновенно.</p>
+  </div>
+
+  Старые демо-работы:
+  <div class="work-card">
+    <h3>Бот записи</h3>
+    <p>Онлайн-запись для мастера маникюра: выбор услуги, времени, напоминания клиенту</p>
+    <div class="video-switcher">
+      <button class="video-btn active" onclick="switchVideo(this, 'https://www.youtube.com/embed/GllEG6F2inY', 'booking')">YouTube</button>
+      <button class="video-btn" onclick="switchVideo(this, 'https://rutube.ru/play/embed/6b5cfb9696b31258e10bdad509181506/?p=c9lvjos490pVQSDzJiD7QA', 'booking')">RuTube</button>
+    </div>
+    <div class="video-container horizontal">
+      <iframe id="booking-player" src="https://www.youtube.com/embed/GllEG6F2inY" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="work-card">
+    <h3>Бот-воронка с ИИ-ассистентом</h3>
+    <p>Бот прогревает клиента, отвечает на его вопросы через ИИ и доводит до записи, без участия владельца</p>
+    <div class="video-switcher">
+      <button class="video-btn active" onclick="switchVideo(this, 'https://www.youtube.com/embed/Eo-kOB-XGds', 'funnel')">YouTube</button>
+      <button class="video-btn" onclick="switchVideo(this, 'https://rutube.ru/play/embed/2f76867be618d5ae1fa9c9cf2dbe93e2/?p=NN1DjvzFcpMu16nAimWWvQ', 'funnel')">RuTube</button>
+    </div>
+    <div class="video-container vertical">
+      <iframe id="funnel-player" src="https://www.youtube.com/embed/Eo-kOB-XGds" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+-->
+
 <script>
-  function switchVideo(btn, url, playerId) {
-    var switcher = btn.parentElement;
-    var buttons = switcher.querySelectorAll('.video-btn');
-    buttons.forEach(function(b) { b.classList.remove('active'); });
-    btn.classList.add('active');
-    document.getElementById(playerId + '-player').src = url;
-  }
+  document.querySelectorAll('.lane').forEach(function (lane) {
+    var track = lane.querySelector('.lane-track');
+    var prevBtn = lane.querySelector('.lane-arrow-prev');
+    var nextBtn = lane.querySelector('.lane-arrow-next');
+
+    function updateArrows() {
+      var hasOverflow = track.scrollWidth > track.clientWidth + 1;
+      lane.classList.toggle('lane-no-overflow', !hasOverflow);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        track.scrollBy({ left: -track.clientWidth * 0.9, behavior: 'smooth' });
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        track.scrollBy({ left: track.clientWidth * 0.9, behavior: 'smooth' });
+      });
+    }
+
+    updateArrows();
+    window.addEventListener('resize', updateArrows);
+  });
+
+  document.addEventListener('click', function (e) {
+    var videoBtn = e.target.closest('.video-btn');
+    if (videoBtn) {
+      var media = videoBtn.closest('.proof-card-media');
+      var iframe = media.querySelector('iframe');
+      media.querySelectorAll('.video-btn').forEach(function (b) { b.classList.remove('active'); });
+      videoBtn.classList.add('active');
+      iframe.src = videoBtn.dataset.video;
+      return;
+    }
+
+    var toggleBtn = e.target.closest('.card-toggle');
+    if (toggleBtn) {
+      var card = toggleBtn.closest('.proof-card');
+      var full = card.querySelector('.proof-card-full');
+      var expanded = card.classList.toggle('is-expanded');
+      full.hidden = !expanded;
+      toggleBtn.textContent = expanded ? 'Свернуть' : 'Читать подробнее';
+    }
+  });
 </script>
   </body>
 </html>

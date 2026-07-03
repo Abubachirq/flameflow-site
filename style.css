@@ -524,3 +524,204 @@ nav a:hover {
   font-size: 13px;
   color: #4a5060;
 }
+.what-i-do {
+  padding: 80px 0;
+  border-bottom: 1px solid #1c1c30;
+}
+
+.what-i-do h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #eef2ff;
+  margin-bottom: 48px;
+}
+
+.service {
+  margin-bottom: 56px;
+}
+
+.service:last-child {
+  margin-bottom: 0;
+}
+
+.service-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #eef2ff;
+  margin-bottom: 10px;
+}
+
+.service-header p {
+  font-size: 15px;
+  color: #8b96a9;
+  line-height: 1.7;
+  max-width: 640px;
+  margin-bottom: 18px;
+}
+
+.lane {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lane-track {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.lane.lane-no-overflow .lane-track {
+  justify-content: center;
+}
+
+.lane-track::-webkit-scrollbar {
+  display: none;
+}
+
+.lane-arrow {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #252540;
+  background-color: #12122a;
+  color: #8b96a9;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lane-arrow:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.lane.lane-no-overflow .lane-arrow {
+  display: none;
+}
+
+.proof-card {
+  scroll-snap-align: start;
+  flex: 0 0 320px;
+  max-width: 320px;
+  position: relative;
+  background-color: #12122a;
+  border: 1px solid #252540;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.proof-card-case {
+  border-color: rgba(29, 78, 216, 0.45);
+  box-shadow: 0 0 18px rgba(29, 78, 216, 0.15);
+}
+
+.proof-badge {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.proof-badge + .proof-card-media {
+  margin-top: 22px;
+}
+
+.proof-badge-case {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(29, 78, 216, 0.5);
+}
+
+.proof-badge-demo {
+  background-color: #1c1c30;
+  color: #8b96a9;
+  border: 1px solid #252540;
+}
+
+.proof-card-media {
+  margin-bottom: 16px;
+}
+
+.proof-card-body h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #eef2ff;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.proof-card-body > p {
+  font-size: 14px;
+  color: #8b96a9;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.card-toggle {
+  font-size: 13px;
+  color: #60a5fa;
+  background: none;
+  border: 1px solid #1d4ed8;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.card-toggle:hover {
+  background-color: rgba(29, 78, 216, 0.15);
+}
+
+.proof-card-full {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #252540;
+}
+
+.proof-card-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  padding: 20px 24px;
+  border-style: dashed;
+  text-align: center;
+}
+
+.proof-card-placeholder h4 {
+  color: #8b96a9;
+}
+
+.proof-card-placeholder p {
+  color: #4a5060;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .proof-card {
+    flex-basis: 260px;
+  }
+
+  .lane-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .service-header p {
+    max-width: 100%;
+  }
+}
