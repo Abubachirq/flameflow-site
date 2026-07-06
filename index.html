@@ -77,10 +77,6 @@
                     <p class="case-block-label">Решение</p>
                     <p>Telegram-бот знает все внутренние документы школы. Сотрудник задаёт вопрос обычными словами, и бот за пару секунд находит ответ и показывает, из какого документа он взят. Если ответа в документах нет, бот сообщает об этом прямо и ничего не придумывает. Это важно, когда речь о правилах.</p>
                   </div>
-                  <div class="case-block">
-                    <p class="case-block-label">Результат</p>
-                    <p class="case-placeholder">[Заполнить после теста: конкретика и цитата заказчика]</p>
-                  </div>
                 </div>
                 <div class="case-tags">
                   <span class="tag">Python</span>
@@ -108,10 +104,40 @@
         <button type="button" class="lane-arrow lane-arrow-prev" aria-label="Предыдущая карточка">‹</button>
         <div class="lane-track">
 
-          <article class="proof-card proof-card-placeholder">
+          <article class="proof-card proof-card-case">
+            <span class="proof-badge proof-badge-case">Реальный кейс</span>
+            <div class="proof-card-media">
+              <div class="video-switcher">
+                <button type="button" class="video-btn active" data-video="https://www.youtube.com/embed/h_wytXctXfs">YouTube</button>
+                <button type="button" class="video-btn" data-video="https://rutube.ru/play/embed/18b2402d598311bef2fd923e59a9908a/">RuTube</button>
+              </div>
+              <div class="video-container vertical">
+                <iframe src="https://www.youtube.com/embed/h_wytXctXfs" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
             <div class="proof-card-body">
-              <h4>Кейс готовится</h4>
-              <p>Проект в работе. Скоро здесь появится реальный кейс с результатами.</p>
+              <h4>Бот учёта задач для частной школы</h4>
+              <p>Задачи ставятся боту обычным текстом, а по понедельникам приходит отчёт: что сделано, что просрочено, что предстоит.</p>
+              <button type="button" class="card-toggle">Читать подробнее</button>
+              <div class="proof-card-full" hidden>
+                <div class="case-blocks">
+                  <div class="case-block">
+                    <p class="case-block-label">Проблема</p>
+                    <p>Задачи сотрудников терялись и забывались. Поручения расходились по переписке и на словах, часть просто выпадала из виду, а руководитель не видел общей картины: кто что должен сделать и что уже просрочено.</p>
+                  </div>
+                  <div class="case-block">
+                    <p class="case-block-label">Решение</p>
+                    <p>Сотрудник или руководитель присылает боту задачу обычным текстом, указывая исполнителя, суть и срок. Бот разбирает это в понятную структуру и запоминает. Каждый понедельник бот присылает отчёт: сколько задач сделано, сколько нет, что просрочено и что предстоит. Руководитель видит полную статистику по всем исполнителям, каждый исполнитель только по себе.</p>
+                  </div>
+                </div>
+                <div class="case-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Telegram</span>
+                  <span class="tag">ИИ</span>
+                  <span class="tag">База данных</span>
+                  <span class="tag">Автоматические отчёты</span>
+                </div>
+              </div>
             </div>
           </article>
 
